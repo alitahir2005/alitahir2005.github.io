@@ -8,13 +8,16 @@
   <style>
     .squarebulletpoints { list-style-type: square; }
     
-    :root { --primary : #3494E6;
-      --secondary: #EC6EAD; }
-    
     body { text-align:center;
       list-style-position:inside;
-      background: linear-gradient(135deg, var(--primary), var(--secondary)); }
+      background: linear-gradient(135deg, #EC6EAD, #EC6EAD);
+      animation: colourchange 2s ease infinite;}
     
+    @keyframes colourchange { 0% { background-position: 0% 82%; }
+      5% { background-position: 100% 19%; }
+      100% { background-position: 0% 82%; } }
+      
+      
   </style>
  
   <body>

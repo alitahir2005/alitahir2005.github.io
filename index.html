@@ -19,27 +19,49 @@
     @keyframes colourchange { 0% { background-position: left; }
       100% { background-position: right; } }
       
-    .white { background-color: white;
+    .whitebg { background-color: white;
       padding: 5px 100px 5px;
       margin: 100px;
       background position: center; }
       
+    .navigationbar { background-color: #2F405C;
+      overflow: hidden;
+    }
+       
+    .nbtext { float: center; 
+      color: white;
+      text-align: center;
+      padding: 14px 16px; }
+    
+    .nbtext:hover { background-color: black;
+      color: white; }
+    
+    .nbtext.current { background-color: #E06CC5;
+      color: white }
+
+    
   </style>
  
 
   <body>
+    
+    <div class="navigationbar">
+      <a class="current" href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="elements">Elements</a>
+      <a href="references">References</a>
    
-    <div class="white">
+    <div class="whitebg">
       
-    <h1>Lithium</h1>
+    <h1 id="home">Lithium</h1>
 
     <img src="Images/Chemistry.jpg" title="(Breaking Bad’s Bad Chemistry - UConn Today 2014)" alt="Header Picture" >
       
-    <h3>What is lithium and what is it used for?</h3>
+    <h3 id="about">What is lithium and what is it used for?</h3>
     
     <p>Lithium is a element that is usually used for medicines that can treat bipolar disorder and many other mental illnesses.</p>
     
-    <h3>All Elements</h3> 
+    <h3 id="elements">All Elements</h3> 
     
     <ul class="squarebulletpoints">
       <li> <a href="Elements/Aluminium.html"> Aluminium </a> </li>
@@ -62,8 +84,8 @@
     </ul>
 
       
-    <h3 class="centre">References</h3>
-    <p class="centre">Breaking Bad’s Bad Chemistry - UConn Today 2014, UConn Today, viewed 18 May 2021, (https://today.uconn.edu/2014/02/breaking-bads-bad-chemistry/#).</p>
+    <h3 id="references">References</h3>
+    <p>Breaking Bad’s Bad Chemistry - UConn Today 2014, UConn Today, viewed 18 May 2021, (https://today.uconn.edu/2014/02/breaking-bads-bad-chemistry/#).</p>
 
     </div>
     

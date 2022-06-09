@@ -1,0 +1,16 @@
+.navigationbar { background-color: #2F405C;
+      overflow: hidden;
+    }
+       
+    .navigationbar a { float: center; 
+      color: white;
+      text-align: center;
+      padding: 5px 5px;
+      text-decoration: none;
+      font-size: 17px; }
+    
+    .navigationbar a:hover { background-color: black;
+      color: white; }
+    
+    .navigationbar a.current { background-color: #E06CC5;
+      color: white }
